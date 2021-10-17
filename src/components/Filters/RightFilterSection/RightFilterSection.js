@@ -59,7 +59,7 @@ const RightFilterSection = (props) => {
         <Container className="cardGrid" maxWidth="md">
           <Grid container spacing={2}>
             {Array.from(props.items).map((item) => (
-              <Grid item key={item.idMeal} xs={12} sm={6} lg={4}>
+              <Grid item key={item.idMeal} xs={12} sm={6} xl={6}>
                 <Card className="card">
                   <CardMedia
                     className="cardMedia"
