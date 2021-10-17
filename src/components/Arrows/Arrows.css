@@ -1,0 +1,23 @@
+.slick-next::before,
+.slick-prev::before {
+  color: orangered;
+  line-height: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .slick-next::before {
+    margin-right: 16px;
+  }
+  .slick-prev::before {
+    margin-left: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .slick-next::before {
+    margin-right: 30px;
+  }
+  .slick-prev::before {
+    margin-left: 12px !important;
+  }
+}

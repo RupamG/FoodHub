@@ -1,0 +1,24 @@
+import React from "react";
+import "./Arrows.css";
+
+const NextArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{
+        ...style,
+
+        borderRadius: "50%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "4px",
+        marginLeft: "-6px !important",
+      }}
+      onClick={onClick}
+    ></div>
+  );
+};
+
+export default NextArrow;

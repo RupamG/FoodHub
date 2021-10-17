@@ -1,0 +1,96 @@
+.right-filter-section {
+  height: 100vh !important;
+  overflow-y: scroll;
+}
+.title {
+  color: #000;
+  font-weight: 600 !important;
+  font-size: 0.8rem !important;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+.cardMedia {
+  padding-top: 56.25%;
+  height: 180px;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardGrid {
+  padding: 20px 0;
+}
+.cardContent {
+  flex-grow: 1;
+}
+
+.card-title {
+  color: #000;
+  font-weight: 400 !important;
+  font-size: 0.8rem !important;
+}
+
+.card-subtitle {
+  color: #000;
+  font-weight: 400 !important;
+  font-size: 0.7rem !important;
+  opacity: 0.6;
+}
+.btn {
+  font-size: 0.6rem !important;
+}
+
+.icon {
+  font-size: 1.2rem !important;
+  padding-right: 5px;
+}
+
+.btn:nth-child(2) {
+  background-color: orange;
+}
+
+.btn:nth-child(2):hover {
+  background-color: rgb(230, 184, 100);
+}
+
+hr {
+  color: #333;
+  opacity: 0.4;
+}
+
+.sort-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right-section {
+  text-align: start;
+}
+
+.right-section-text {
+  font-size: 0.8rem;
+  color: #000;
+  font-weight: 500;
+}
+
+.right-section select {
+  padding: 6px 2px;
+}
+.right-section select option {
+  font-size: 0.5rem !important;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 513px) {
+  .sort-section {
+    flex-direction: column;
+  }
+  .right-section {
+    margin-top: 10px;
+  }
+}

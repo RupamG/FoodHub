@@ -1,0 +1,59 @@
+.left-filter-section {
+  height: 100vh !important;
+  overflow-y: scroll;
+}
+.title {
+  color: #000;
+  font-weight: 600 !important;
+  font-size: 0.8rem !important;
+  text-transform: uppercase;
+  text-align: start;
+}
+
+hr {
+  color: #333;
+  opacity: 0.4;
+}
+
+.resetAll {
+  color: #000;
+  font-weight: 400 !important;
+  font-size: 0.7rem !important;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.title-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchBar {
+  width: 100%;
+}
+.searchBar-label {
+  font-size: 0.7rem !important;
+}
+
+.filter-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-filter {
+  margin-top: 8px;
+}
+
+.filter-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #000;
+}
+.filter-label {
+  font-size: 0.8rem !important;
+  font-weight: 500 !important;
+}
+
+.slider {
+  color: red !important;
+}

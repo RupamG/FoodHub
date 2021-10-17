@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import FoodItemsSlider from "./components/FoodItemsSlider/FoodItemsSlider";
+import Navbar from "./components/Navbar/Navbar";
+import Filters from "./components/Filters/Filters";
+import "./App.css";
+const App = () => {
+  const [items, setItems] = useState({});
+  useEffect(() => {
+    async function getMealsbyName() {
+      const res = await axios.get(
+        "https://www.themealdb.com/api/json/v1/1/search.php?s=chicken"
+      );
 
-function App() {
+      setItems(res.data.meals);
+    }
+
+    getMealsbyName();
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <FoodItemsSlider items={items} />
+      <Filters items={items} />
+    </>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,263 @@
+.slider-item-container {
+  background-color: white;
+  width: 200px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.slider-item-cover {
+  height: 180px;
+  width: 200px;
+  background-color: #fff;
+
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.slider-item-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.slider-item-text {
+  height: 60px;
+
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.slider-item-title {
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 9px;
+  margin-left: 16px;
+}
+.slider-item-subtitle {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  color: #333;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 6px;
+  opacity: 0.6;
+}
+
+.slider-item-subtitle-1 {
+  margin-left: 16px;
+}
+.slider-item-subtitle-2 {
+  color: red;
+  opacity: 1;
+  font-weight: 700;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 942px) {
+  .slider-item-container {
+    background-color: white;
+    width: 270px;
+    margin: auto;
+  }
+
+  .slider-item-cover {
+    height: 180px;
+    width: 270px;
+  }
+
+  .slider-item-text {
+    height: 80px;
+
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .slider-item-title {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 16px;
+    margin-left: 16px;
+  }
+  .slider-item-subtitle {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: #333;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 10px;
+    opacity: 0.6;
+  }
+
+  .slider-item-subtitle-1 {
+    margin-left: 16px;
+  }
+  .slider-item-subtitle-2 {
+    color: red;
+    opacity: 1;
+    font-weight: 700;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 866px) {
+  .slider-item-container {
+    background-color: white;
+    width: 260px;
+  }
+
+  .slider-item-cover {
+    height: 180px;
+    width: 260px;
+  }
+}
+
+@media only screen and (max-width: 839px) {
+  .slider-item-container {
+    background-color: white;
+    width: 240px;
+  }
+
+  .slider-item-cover {
+    height: 180px;
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 779px) {
+  .slider-item-container {
+    background-color: white;
+    width: 220px;
+  }
+
+  .slider-item-cover {
+    height: 180px;
+    width: 220px;
+  }
+}
+
+@media only screen and (max-width: 717px) {
+  .slider-item-container {
+    background-color: white;
+    width: 200px;
+  }
+
+  .slider-item-cover {
+    height: 180px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 664px) {
+  .slider-item-container {
+    background-color: white;
+    width: 300px;
+  }
+
+  .slider-item-cover {
+    height: 180px;
+    width: 300px;
+  }
+  .slider-item-subtitle-2 {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 652px) {
+  .slider-item-container {
+    background-color: white;
+    width: 290px;
+  }
+
+  .slider-item-cover {
+    height: 180px;
+    width: 290px;
+  }
+}
+
+@media only screen and (max-width: 629px) {
+  .slider-item-container {
+    background-color: white;
+    width: 270px;
+    margin: auto;
+  }
+
+  .slider-item-cover {
+    height: 180px;
+    width: 270px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .slider-item-container {
+    background-color: white;
+    width: 260px;
+  }
+
+  .slider-item-cover {
+    height: 180px;
+    width: 260px;
+  }
+}
+
+@media only screen and (max-width: 558px) {
+  .slider-item-container {
+    background-color: white;
+    width: 240px;
+  }
+
+  .slider-item-cover {
+    height: 180px;
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 517px) {
+  .slider-item-container {
+    background-color: white;
+    width: 220px;
+  }
+
+  .slider-item-cover {
+    height: 180px;
+    width: 220px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .slider-item-container {
+    background-color: white;
+    width: 320px;
+  }
+
+  .slider-item-cover {
+    height: 200px;
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 377px) {
+  .slider-item-container {
+    background-color: white;
+    width: 280px;
+  }
+
+  .slider-item-cover {
+    height: 180px;
+    width: 280px;
+  }
+}
