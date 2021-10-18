@@ -7,6 +7,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import "./LeftFilterSection.css";
 import Slider from "@mui/material/Slider";
+import SelectBoxes from "./SelectBoxes";
 
 const marks = [
   {
@@ -24,7 +25,10 @@ function valuetext(value) {
   return `₹${value}`;
 }
 
-const LeftFilterSection = () => {
+const LeftFilterSection = (props) => {
+  let meals = [...Array.from(props.items)];
+  let areas = meals.map((e) => e.strArea);
+  let uniqueAreas = [...new Set(areas)];
   return (
     <>
       <div className="left-filter-section">
@@ -43,100 +47,15 @@ const LeftFilterSection = () => {
           {/* Format */}
           <div className="format">
             <div className="filter-heading">
-              <p className="filter-title">Format</p>
+              <p className="filter-title">Cuisins</p>
               <div className="icon-filter">
                 <ArrowDropUpIcon />
               </div>
             </div>
             <div className="filter-body">
-              <FormGroup>
-                <FormControlLabel
-                  control={<Checkbox size="small" color="error" />}
-                  label={
-                    <Typography
-                      className="filter-label"
-                      variant="body2"
-                      color="textSecondary"
-                    >
-                      Buffet
-                    </Typography>
-                  }
-                />
-                <FormControlLabel
-                  control={<Checkbox size="small" color="error" />}
-                  label={
-                    <Typography
-                      className="filter-label"
-                      variant="body2"
-                      color="textSecondary"
-                    >
-                      Mini Buffet
-                    </Typography>
-                  }
-                />
-                <FormControlLabel
-                  control={
-                    <Checkbox defaultChecked size="small" color="error" />
-                  }
-                  label={
-                    <Typography
-                      className="filter-label"
-                      variant="body2"
-                      color="textSecondary"
-                    >
-                      Lunch Box
-                    </Typography>
-                  }
-                />
-                <FormControlLabel
-                  control={<Checkbox size="small" color="error" />}
-                  label={
-                    <Typography
-                      className="filter-label"
-                      variant="body2"
-                      color="textSecondary"
-                    >
-                      Snack Box
-                    </Typography>
-                  }
-                />
-                <FormControlLabel
-                  control={<Checkbox size="small" color="error" />}
-                  label={
-                    <Typography
-                      className="filter-label"
-                      variant="body2"
-                      color="textSecondary"
-                    >
-                      Live Counter
-                    </Typography>
-                  }
-                />
-                <FormControlLabel
-                  control={<Checkbox size="small" color="error" />}
-                  label={
-                    <Typography
-                      className="filter-label"
-                      variant="body2"
-                      color="textSecondary"
-                    >
-                      Food Trucks
-                    </Typography>
-                  }
-                />
-                <FormControlLabel
-                  control={<Checkbox size="small" color="error" />}
-                  label={
-                    <Typography
-                      className="filter-label"
-                      variant="body2"
-                      color="textSecondary"
-                    >
-                      Pop-up
-                    </Typography>
-                  }
-                />
-              </FormGroup>
+              {uniqueAreas.map((item, i) => (
+                <SelectBoxes key={i} item={item} items={props.items} />
+              ))}
             </div>
           </div>
           <hr />
